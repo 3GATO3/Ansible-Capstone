@@ -1,0 +1,8 @@
+- hosts: localhost
+  become: yes
+  vars_files:
+    - vars/main.yml
+
+  roles:
+    - role: wordpress #this is the wordpress role in play. Talk about this in guide. talk about this role, since I created it. 
+    - role: geerlingguy.mysql
